@@ -387,4 +387,57 @@ window.addEventListener("DOMContentLoaded", function(t) {
 			}), document.getElementById("app-style").href.includes("rtl.min.css") && (document.getElementsByTagName("html")[0].dir = "rtl")
 		}, n.App = new t, n.App.Constructor = t
 	}(window.jQuery), window.jQuery.App.init(), Waves.init(), feather.replace();
+
+function createCommentBox() {
+	var cardDiv = document.createElement("div");
+	cardDiv.className = "card";
+	
+	var form = document.createElement("form");
+	form.method = "post";
+	form.className = "card-body";
+	
+	var span = document.createElement("span");
+	span.className = "input-icon icon-end";
+	
+	var textarea = document.createElement("textarea");
+	textarea.rows = "3";
+	textarea.className = "form-control";
+	textarea.placeholder = "Post a new message";
+	
+	var div = document.createElement("div");
+	div.className = "pt-1 float-end";
+	
+	var link = document.createElement("a");
+	link.href = "";
+	link.className = "btn btn-primary btn-sm waves-effect waves-light";
+	link.innerHTML = "Send";
+	
+	var ul = document.createElement("ul");
+	ul.className = "nav nav-pills profile-pills mt-1";
+	
+	var icons = ["fa fa-user", "fa fa-location-arrow", "fa fa-camera", "far fa-smile"];
+	
+	for (var i = 0; i < icons.length; i++) {
+		var li = document.createElement("li");
+		li.className = "mx-3";
+		
+		var a = document.createElement("a");
+		a.href = "#";
+		
+		var icon = document.createElement("i");
+		icon.className = icons[i];
+		
+		a.appendChild(icon);
+		li.appendChild(a);
+		ul.appendChild(li);
+	}
+	
+	form.appendChild(span);
+	span.appendChild(textarea);
+	div.appendChild(link);
+	form.appendChild(div);
+	form.appendChild(ul);
+	cardDiv.appendChild(form);
+	
+}
 //# sourceMappingURL=app.min.js.map
