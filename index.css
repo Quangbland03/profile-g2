@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+    padding: 0;
+background-color: #ebeff2;
+}
+
+.image-designer{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    margin-left: 25px;
+    padding: 3px;
+    background-color: rgb(219, 210, 210);
+}
+.infomation-designer{
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+.infomation-designer-text ul li a i{
+
+font-size: 20px;
+border-radius: 100%;
+border: 5px;
+border-color: rgb(46, 182, 182);
+background-color: rgb(212, 219, 221);
+padding: 5px 6px;
+margin-bottom: 10px;
+
+}
+.card-body ul li a i{
+    color: rgb(181, 176, 176);
+
+}
+.nav-fix {
+    width: 260px;
+    height: auto;
+    position: fixed;
+    right: 0;
+z-index: 50;
+background-color: #e4e8eb;
+position: fixed;
+
+}
+
+.nav-fix-theme {
+    height: 60px;
+    background-color: rgb(71, 71, 181);
+    margin-bottom: 19px;
+}
+
+.incon-x {
+    background-color: rgb(65, 63, 63);
+    padding: 5px 7px;
+    border-radius: 100%;
+    color: aliceblue;
+}
+
+.nav-fix-customeize {
+    margin: 0 10px;
+    height: 70px;
+    background-color: antiquewhite;
+    color: rgb(216, 158, 87);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
