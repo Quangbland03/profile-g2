@@ -29,6 +29,23 @@ padding: 5px 6px;
 margin-bottom: 10px;
 
 }
+.social-list .social-list-item .fa-facebook{
+    color: blue;
+}
+
+.social-list .social-list-item .fa-g{
+    color: #ff5b5b;
+}
+
+.social-list .social-list-item .fa-twitter{
+    color: #71b6f9;
+}
+
+.social-list .social-list-item .fa-github{
+    color: #333333;
+}
+
+
 .card-body ul li a i{
     color: rgb(181, 176, 176);
 
