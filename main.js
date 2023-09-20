@@ -1,3 +1,37 @@
+const sendButton = document.getElementById('sendform');
+sendButton.addEventListener('click', function(event) {
+  event.preventDefault();
+  const getvalue = document.getElementById('form-comment').value;
+
+  const toto = document.getElementById("toto");
+  let output = ` <div style=" height: 15% ;width: 100%;justify-self: flex-start; display: flex;">
+
+<div>
+    <img style="height: 40px; width: 40px; border-radius: 5px; margin-right:10px; margin-top: 5px;"
+        src="https://coderthemes.com/adminto/layouts/assets/images/users/user-1.jpg" alt="">
+</div>
+
+<div style="height: 300px; width: 91%;">
+    <h5>
+        <a style="color: #323a46;text-decoration: none; font-size: 11pt; margin-top: 0;" href="#"
+            class="text-dark">Nicolai Larson</a>
+        <small style="font-size: 7pt;">2 minutes ago</small>
+    </h5>
+    <p style="margin-top: 5px; margin-bottom: 1rem; display: block;">
+      ${getvalue}
+    </p>
+    <div style="margin-top: 10px; ">
+        <a href="" style="margin-right: 5px;"><i style="color: #323a46;"
+                class="glyphicon glyphicon-thumbs-up"></i></a>
+        <a href="" style="margin-right: 5px;"><i style="color: #323a46;"
+                class="glyphicon glyphicon-thumbs-down"></i></a>
+        <a href="" style="color: #323a46;">Reply</a>
+    </div>
+</div>
+</div>`;
+toto.insertAdjacentHTML("afterbegin", output);
+});
+
 "use strict";
 
 function _classCallCheck(t, e) {
